@@ -5,6 +5,7 @@ import Header from '@/components/Header'
 import Layout from '@/components/Layout'
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css";
+import Footer from '@/components/Footer'
 
 
 
@@ -26,6 +27,7 @@ export default function RootLayout({
         <Header/>
         {children}
         </Layout>
+        <Footer/>
         </body>
     </html>
   )
