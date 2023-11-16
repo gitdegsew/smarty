@@ -280,6 +280,9 @@ export const productData = [
     quantity: 1,
   },
 ];
+
+
+
 export const trendingProducts = [
   {
     _id: 1,

@@ -1,9 +1,9 @@
-export interface Products {
-  _id: number;
+export interface Product {
+  _id: string;
   title: string;
   isNew: boolean;
-  oldPrice: number;
-  price: number;
+  oldPrice: string;
+  price: string;
   description: string;
   category: string;
   image: string;
@@ -12,7 +12,7 @@ export interface Products {
 }
 
 export interface ItemProps {
-  item: Products;
+  item: Product;
 }
 
 export interface StateProps {
@@ -20,7 +20,7 @@ export interface StateProps {
     productData: [];
     userInfo: {};
     orderData: {
-      order: Products[];
+      order: Product[];
     };
   };
 }
