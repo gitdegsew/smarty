@@ -1,9 +1,9 @@
 export interface Product {
-  _id: string;
+  _id: number;
   title: string;
   isNew: boolean;
-  oldPrice: string;
-  price: string;
+  oldPrice: number;
+  price: number;
   description: string;
   category: string;
   image: string;

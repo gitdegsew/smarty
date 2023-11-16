@@ -1,7 +1,7 @@
 "use client";
 
 import { useDispatch, useSelector } from "react-redux";
-import { Products, StateProps } from "../../type";
+import { Product, StateProps } from "../../type";
 import FormattedPrice from "./FormattedPrice";
 import { useEffect, useState } from "react";
 import { loadStripe } from "@stripe/stripe-js";
@@ -16,7 +16,7 @@ const PaymentForm = () => {
   const [totalAmt, setTotalAmt] = useState(0);
   useEffect(() => {
     let amt = 0;
-    productData.map((item: Products) => {
+    productData.map((item: Product) => {
       amt += item.price * item.quantity;
       return;
     });

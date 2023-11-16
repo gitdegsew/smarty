@@ -8,7 +8,7 @@ import { AiOutlineUser } from "react-icons/ai";
 import { useSession, signIn, signOut } from "next-auth/react";
 import Image from "next/image";
 import { useDispatch, useSelector } from "react-redux";
-import { Products, StateProps } from "../../type";
+import { Product, StateProps } from "../../type";
 import FormattedPrice from "./FormattedPrice";
 import Link from "next/link";
 import { addUser, deleteUser } from "@/redux/shoppingSlice";
@@ -39,7 +39,7 @@ const Header = () => {
 
   useEffect(() => {
     let amt = 0;
-    productData.map((item: Products) => {
+    productData.map((item: Product) => {
       amt += item.price * item.quantity;
       return;
     });
